@@ -1,6 +1,7 @@
 package main;
 
 import java.io.UnsupportedEncodingException;
+import java.math.BigInteger;
 
 public class HashFunction {
 
@@ -17,11 +18,12 @@ public class HashFunction {
 	
 	public int hash(String s) throws UnsupportedEncodingException
 	{
-		byte[] bytes = s.getBytes("UTF-8");
+		//byte[] bytes = s.getBytes("UTF-8");
 		int hash = 0;
-		for(byte val : bytes)
-			hash += (val*a + b);
-		//hash = s.hashCode()*a + b;
+		//for(byte val : bytes)
+			//hash += (val*a + b);
+		hash = Math.abs(s.hashCode())*a + b;
 		return hash % n;
 	}
+	
 }
