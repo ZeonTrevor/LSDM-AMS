@@ -19,5 +19,9 @@ The parameters for the script are as follows:
 
 Following is an example:
 ```
+./run.sh ebola.json.gz 2000 5 2
+```
+Also you can run the jar file directly using:
+```
 java -jar ASM.jar ebola.json.gz 2000 5 2
 ```
