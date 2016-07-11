@@ -25,3 +25,7 @@ Also you can run the jar file directly using:
 ```
 java -jar ASM.jar ebola.json.gz 2000 5 2
 ```
+
+## References
+1. The space complexity of approximating the frequency moments [AMS96](http://dl.acm.org/citation.cfm?id=237823)
+2. Chapter 4. Mining Data Streams [Mining Massive Datasets](http://infolab.stanford.edu/~ullman/mmds/ch4.pdf)
