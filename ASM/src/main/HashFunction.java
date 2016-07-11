@@ -1,7 +1,6 @@
 package main;
 
 import java.io.UnsupportedEncodingException;
-import java.math.BigInteger;
 
 public class HashFunction {
 

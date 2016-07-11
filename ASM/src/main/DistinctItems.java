@@ -188,7 +188,7 @@ public class DistinctItems {
 		for(double val: medianR)
 			sum += val;
 		sum = sum/medianR.size();
-		return (int) (sum/0.77351D);
+		return (int) sum;
 	}
 	
 	/**
@@ -202,7 +202,7 @@ public class DistinctItems {
 	public static void main(String[] args) throws IOException
 	{
 		long start = System.currentTimeMillis();
-		
+
 		String inputPath = args[0];
 		int n = Integer.parseInt(args[1]);
 		int numHashGroups = Integer.parseInt(args[2]);
@@ -223,7 +223,7 @@ public class DistinctItems {
 			Tweet tweet = new Tweet(line);
 			totalHashtags += tweet.getHashtags().size();
 			//uniqueHashtags.addAll(tweet.getHashtags());
-			d.processHashTags(tweet.getHashtags());++count;
+			d.processHashTags(tweet.getHashtags());
 			if(++count == n)
 				break;
 		}
@@ -234,5 +234,5 @@ public class DistinctItems {
 		System.out.println("Execution time:" + (System.currentTimeMillis() - start)/1000 + " secs");
 		br.close();
 	}
-	
+
 }
