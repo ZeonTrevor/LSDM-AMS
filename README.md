@@ -1,4 +1,4 @@
-# LSDM-ASM
+# LSDM-AMS
 ## Description
 The implementation takes as input the path to the dataset, length of the stream and total number of hash functions divided into hash groups (numHashGroups * numHashFunctionsInGroup). Multiple hash functions are used to improve the estimate of the number of distinct items in the stream based on the approach described in [section 4.4.3](http://infolab.stanford.edu/~ullman/mmds/ch4.pdf) of [Mining Massive Datasets](http://www.mmds.org/) book.
 
